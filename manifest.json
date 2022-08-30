@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "I'm Feeling Lucky Autocontinue",
+  "short_name": "GoLucky",
+  "description": "Automatically navigate through the Google redirect notice",
+  "version": "1.0.0.0",
+  "author": "Eric Lawrence (@ericlaw)",
+  "minimum_chrome_version": "103",
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/url?*"],
+      "js": ["content-script.js"]
+    }
+  ]
+}
